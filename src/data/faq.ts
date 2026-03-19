@@ -1,42 +1,32 @@
 export const faqs = [
   {
-    question: "Do I need an OpenAI API key?",
+    question: "Do I need an account?",
     answer:
-      "Yes. Waffler uses your own OpenAI API key for both Whisper transcription and GPT text cleanup. This means your data goes directly to OpenAI and never passes through our servers. You can get an API key at platform.openai.com.",
+      "No. There is no Waffler account. Download the app, set your API key in the .env file, and you're done.",
   },
   {
-    question: "How does Waffler protect my privacy?",
+    question: "Is it really free?",
     answer:
-      "Your audio is sent directly from your machine to OpenAI using your own API key. We never see, store, or process your audio or transcriptions. There's no account required to download, and we don't collect any usage data from the app.",
+      "Yes — Waffler itself is free and open source (MIT licensed). You pay OpenAI or Groq directly for API usage at their standard rates, roughly $0.006 per minute with OpenAI Whisper, often cheaper with Groq.",
   },
   {
-    question: "What happens when the free trial expires?",
+    question: "Is my data private?",
     answer:
-      "After the 7-day trial, Normal mode stops working until you purchase Waffler Pro ($29 one-time). You'll never lose access to your settings or API key configuration — just unlock to keep transcribing.",
+      "Audio goes to OpenAI or Groq under your own API key — Waffler's servers are never in the loop. Your transcription history is stored locally on your machine only and never leaves your device.",
   },
   {
-    question: "Does Waffler work offline?",
+    question: "What's the difference between OpenAI and Groq?",
     answer:
-      "Waffler requires an internet connection since it sends audio to OpenAI's Whisper API for transcription and uses GPT for text cleanup. The app itself runs locally, but the AI processing happens in the cloud via your API key.",
+      "Both work well. Groq is generally faster and often cheaper. OpenAI Whisper is more widely used and well-documented. Set whichever API key you already have in the .env file — you can switch at any time.",
   },
   {
-    question: "What languages are supported?",
+    question: "Why does it warn about an unidentified developer / unsafe app?",
     answer:
-      "Waffler supports all languages that OpenAI's Whisper model supports — over 50 languages including English, Spanish, French, German, Japanese, Chinese, and many more. Language is auto-detected from your speech.",
+      "Waffler builds are unsigned — code signing certificates cost money and this is a free indie project. On Mac, right-click the app and choose Open to bypass Gatekeeper. On Windows, click More Info then Run Anyway to get past SmartScreen. This is normal for unsigned open-source software.",
   },
   {
-    question: "Does it work with every app?",
+    question: "Mac or Windows?",
     answer:
-      "Yes! Waffler works system-wide. The global hotkey activates from any application, and the transcribed text is automatically pasted wherever your cursor is — text editors, browsers, Slack, email, IDEs, you name it.",
-  },
-  {
-    question: "Is there a Linux version?",
-    answer:
-      "Not yet, but it's on our roadmap. Currently Waffler is available for macOS and Windows. Follow us on GitHub for updates on Linux support.",
-  },
-  {
-    question: "What's the difference between Normal and Ramble mode?",
-    answer:
-      "Normal mode gives you clean, faithful transcription of what you said. Ramble mode is designed for ADHD-friendly brain dumps — speak freely and messily, and the AI restructures your thoughts into clear, organized text. Great for getting ideas out of your head fast.",
+      "Both are supported. Separate installers are available on the GitHub releases page at github.com/jbf-tars/waffler/releases.",
   },
 ];

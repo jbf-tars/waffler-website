@@ -45,22 +45,31 @@ import DownloadButton from "../ui/DownloadButton.astro";
       </p>
 
       <p class="anim-fade anim-delay-2 mt-3 text-sm text-text-muted max-w-lg mx-auto md:mx-0">
-        Dictate. Ramble. Build. Three modes for every way you work.
+        Press a hotkey, speak, release — your polished text is in the clipboard.
       </p>
 
       <div class="anim-scale anim-delay-3 mt-10 flex flex-col items-center md:items-start gap-4">
-        <DownloadButton size="lg" />
-
-        <p data-download-alt class="text-sm text-text-muted">
-          Also available for <a href="/download" class="underline hover:text-text transition-colors">Windows</a>
-        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a
+            href="https://github.com/jbf-tars/waffler/releases"
+            class="inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all px-8 py-4 text-lg bg-primary text-white hover:bg-primary-hover"
+          >
+            Download for Mac
+          </a>
+          <a
+            href="https://github.com/jbf-tars/waffler/releases"
+            class="inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all px-8 py-4 text-lg border border-text/15 text-text hover:bg-text/5"
+          >
+            Download for Windows
+          </a>
+        </div>
 
         <p data-mobile-msg class="hidden text-sm text-text-muted">
           Visit on your Mac or PC to download Waffler.
         </p>
 
         <p class="text-xs text-text-muted/60">
-          Free 7-day trial · No signup required
+          Free &amp; open source · Bring your own API key
         </p>
       </div>
     </div>

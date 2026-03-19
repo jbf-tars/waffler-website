@@ -7,32 +7,32 @@ export const features = [
   },
   {
     icon: "mic",
-    title: "Whisper Transcription",
+    title: "OpenAI Whisper or Groq",
     description:
-      "Powered by OpenAI's Whisper model for accurate speech-to-text in dozens of languages.",
+      "Choose your transcription provider. Both are accurate. Groq is faster and often cheaper — set whichever API key you have.",
   },
   {
     icon: "sparkles",
     title: "AI Cleanup",
     description:
-      "GPT automatically cleans up filler words, false starts, and grammar — so your text reads like you typed it.",
+      "Filler words removed, grammar fixed automatically — so your text reads like you typed it deliberately.",
   },
   {
     icon: "clipboard",
-    title: "Auto-Paste",
+    title: "Auto-Copies to Clipboard",
     description:
-      "Transcribed text is automatically pasted into whatever app you're working in. Zero friction.",
+      "Cleaned text lands in your clipboard the moment transcription is done. Paste it anywhere.",
   },
   {
     icon: "key",
-    title: "BYOK Privacy",
+    title: "Local Transcription History",
     description:
-      "Bring your own OpenAI API key. Your audio and text go directly to OpenAI — never through our servers.",
+      "Every transcription is saved on your device and is searchable. Nothing leaves your machine except the audio you send to your API provider.",
   },
   {
     icon: "monitor",
-    title: "Cross-Platform",
+    title: "Mac + Windows · No Account",
     description:
-      "Native apps for both macOS and Windows. Same great experience on your preferred OS.",
+      "Native installers for macOS and Windows. Download, add your API key, and you're set — no account or sign-up required.",
   },
 ];
